@@ -1,6 +1,6 @@
 <?php
 
-namespace Frontend;
+namespace Lellol\Controller\Frontend;
 
 /**
 * 
@@ -8,9 +8,10 @@ namespace Frontend;
 class Home extends \Simple\Middleware\Controller
 {
 
+	protected $_response=array();
 	public function notfoundAction()
 	{
-		$this->response->test = 'ola mundo';
+		$this->_response['test'] = 'ola mundo';
 		echo "NOTFOUND";
 
 		return true;

@@ -1,5 +1,5 @@
 <?php
-namespace Helper\Model;
+namespace Lellol\Helper\Model;
 
 
 /**

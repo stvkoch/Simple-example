@@ -2,8 +2,8 @@
 
 return array(
 
-	\Simple\Middleware\Application::definition(array('class'=>'Request','function'=>'parse', 'id'=>'simple.request')),
-	\Simple\Middleware\Application::definition(array('class'=>'Router','function'=>'parse', 'routesFileNameConfig'=>'routes', 'id'=>'simple.router')),
+	\Simple\Middleware\Application::definition(array('class'=>'Request','function'=>'parse', 'configFilenameRoutes'=>'routes', 'id'=>'simple.request')),
+	//\Simple\Middleware\Application::definition(array('class'=>'Router','function'=>'parse', 'id'=>'simple.router')),
 	\Simple\Middleware\Application::definition(array('class'=>'View','function'=>'open', 'id'=>'simple.view')),
 
 	//yours middlewares pre controler
@@ -13,6 +13,7 @@ return array(
 	//yours middlewares pos controler
 
 	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'render', 'id'=>'simple.view')),
+	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view')),
 	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'save', 'id'=>'simple.view')),
 	//mandatory
 

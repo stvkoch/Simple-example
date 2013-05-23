@@ -5,9 +5,9 @@ return array(
 	},
 	function(){
 		$loader = require '../vendor/autoload.php';
-		$loader->add('Frontend', __DIR__.'/../Controller');
+		$loader->setUseIncludePath(true);
+		$loader->add('Lellol', __DIR__.'/../');
 	},
 	function($backbone){
-		var_dump($backbone);
 	},
 );
