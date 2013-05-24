@@ -1,5 +1,5 @@
 {
-    "hash": "9e80337fcd36a56dca1af9296f9485f8",
+    "hash": "874255d555a072076938ea34f6bc1a38",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -103,18 +103,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stvkoch/Simple.git",
-                "reference": "4e6fa7a952a9633057ee57599ad33e3141f9c95b"
+                "reference": "915568966100063d558b01baea0f85ef0808b522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stvkoch/Simple/zipball/4e6fa7a952a9633057ee57599ad33e3141f9c95b",
-                "reference": "4e6fa7a952a9633057ee57599ad33e3141f9c95b",
+                "url": "https://api.github.com/repos/stvkoch/Simple/zipball/915568966100063d558b01baea0f85ef0808b522",
+                "reference": "915568966100063d558b01baea0f85ef0808b522",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2013-05-20 17:20:50",
+            "time": "2013-05-24 14:49:29",
             "type": "library",
             "installation-source": "source",
             "autoload": {

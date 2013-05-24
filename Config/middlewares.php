@@ -1,20 +1,31 @@
 <?php
 
 return array(
+	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'bootstrap', 'function'=>'start', 'id'=>'lellol.bootstrap')),
 
 	\Simple\Middleware\Application::definition(array('class'=>'Request','function'=>'parse', 'configFilenameRoutes'=>'routes', 'id'=>'simple.request')),
-	//\Simple\Middleware\Application::definition(array('class'=>'Router','function'=>'parse', 'id'=>'simple.router')),
+
+	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'open', 'id'=>'lellol.cache')),
+
 	\Simple\Middleware\Application::definition(array('class'=>'View','function'=>'open', 'id'=>'simple.view')),
 
 	//yours middlewares pre controler
+	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'open', 'id'=>'lellol.flash')),
+
 
 	\Simple\Middleware\Application::definition(array('class'=>'Application', 'function'=>'dispatch', 'id'=>'simple.application')),
 
 	//yours middlewares pos controler
+	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'save', 'id'=>'lellol.flash')),
+
 
 	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'render', 'id'=>'simple.view')),
-	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view')),
-	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'save', 'id'=>'simple.view')),
+
+	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'save', 'id'=>'lellol.cache')),
+
+	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view', 'route'=>'!404$')),
+
+
 	//mandatory
 
 	/*array(

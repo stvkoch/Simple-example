@@ -5,6 +5,7 @@ ini_set("display_errors", 1);
 //open autoloader
 $loader = require __DIR__.'/../vendor/autoload.php';
 
+
 //set default Config directory, where find config files
 \Simple\Config\PHP::setPath(__DIR__.'/../Config/');
 
