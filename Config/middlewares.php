@@ -7,7 +7,7 @@ return array(
 
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'open', 'id'=>'lellol.cache')),
 
-	\Simple\Middleware\Application::definition(array('class'=>'View','function'=>'open', 'id'=>'simple.view')),
+	//\Simple\Middleware\Application::definition(array('class'=>'View','function'=>'open', 'id'=>'simple.view')),
 
 	//yours middlewares pre controler
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'open', 'id'=>'lellol.flash')),
@@ -19,7 +19,17 @@ return array(
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'save', 'id'=>'lellol.flash')),
 
 
-	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'render', 'id'=>'simple.view')),
+	//\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'render', 'id'=>'simple.view')),
+	\Simple\Middleware\Application::definition(
+	    array(
+	        'namespace'=>'SmartyTemplate\Middleware',
+	        'class'=>'View',
+	        'function'=>'render',
+	        'id'=>'simple.view',
+	        'layout'=> \Simple\Config\PHP::get('application', 'layout')
+	    )
+	),
+
 
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'save', 'id'=>'lellol.cache')),
 
