@@ -1,5 +1,5 @@
 {
-    "name": "stvkoch/Simple-example",
+    "name": "stvkoch/simple-example",
     "type": "library",
     "description": "Example very Simple Model/SQL Buidler and Config Libray",
     "keywords": ["microframework", "Config", "Model", "SQL Builder"],
