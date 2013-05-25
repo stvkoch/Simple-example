@@ -1,8 +1,22 @@
 {
+    "name": "stvkoch/Simple-example",
+    "type": "library",
+    "description": "Example very Simple Model/SQL Buidler and Config Libray",
+    "keywords": ["microframework", "Config", "Model", "SQL Builder"],
+    "homepage": "https://github.com/stvkoch/Simple-example",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Koch",
+            "email": "stvkoch@gmail.com"
+        }
+    ],
+
     "require": {
     	"php": ">=5.3.3",
         "monolog/monolog": "*",
         "stvkoch/Simple": "dev-master",
+        "stvkoch/Simple-SmartyTemplateMiddleware": "dev-master",
         "psr/log": "dev-master"
     },
     "autoload": {

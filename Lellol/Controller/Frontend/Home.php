@@ -3,15 +3,14 @@
 namespace Lellol\Controller\Frontend;
 
 /**
-* 
+* What you send to response you process to template
 */
 class Home extends \Simple\Middleware\Controller
 {
 
-	protected $_response=array();
 	public function notfoundAction()
 	{
-		$this->_response['test'] = 'ola mundo';
+		$this->response['test'] = 'ola mundo';
 		echo "NOTFOUND";
 
 		return true;
@@ -24,6 +23,7 @@ class Home extends \Simple\Middleware\Controller
 
 	public function indexAction()
 	{
+		$this->response['foo'] = 'bar';
 		echo "INDXEEE";
 	}
 
