@@ -3,15 +3,26 @@
 return array(
     //define namespace for all controller
     array(
-        'route'=>'.*',
-        'namespace'=>'\Lellol\Controller\Frontend',
+        'route'=>'!^/admin',
+        'namespace'=>'\Lellol\Frontend\Controller',
         '_continue'=>true
     ),
-
+    array(
+        'route'=>'^/admin',
+        'namespace'=>'\Lellol\Admin\Controller',
+        '_continue'=>true
+    ),
     array(
     	'route'=>'\.json$',
+        '_replace'=>'',
     	'format'=>'json',
     	'_continue'=>true
+    ),
+    array(
+        'route'=>'\.xml$',
+        '_replace'=>'',
+        'format'=>'xml',
+        '_continue'=>true
     ),
 
     array(

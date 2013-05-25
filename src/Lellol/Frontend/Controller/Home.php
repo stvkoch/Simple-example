@@ -1,6 +1,6 @@
 <?php
 
-namespace Lellol\Controller\Frontend;
+namespace Lellol\Frontend\Controller;
 
 /**
 * What you send to response you process to template
@@ -23,8 +23,8 @@ class Home extends \Simple\Middleware\Controller
 
 	public function indexAction()
 	{
-		$this->response['foo'] = 'bar';
-		echo "INDXEEE";
+		$this->response['name'] = 'bar';
+		$this->response['items'] = array('item'=>array(array('name'=>'Thomas', 'age'=>18), array('name'=>'Petter', 'age'=>19), array('name'=>'Philip', 'age'=>17)));
 	}
 
 }

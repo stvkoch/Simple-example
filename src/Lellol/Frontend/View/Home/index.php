@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Hello Word</title>
+    <title>Hello Word!!</title>
 </head>
 <body>
 
     
-    Hello 500
+    Hello {$name}
 
 
 </body>
