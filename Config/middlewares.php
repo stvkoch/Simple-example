@@ -24,16 +24,16 @@ return array(
 	    array(
 	        'namespace'=>'SmartyTemplate\Middleware',
 	        'class'=>'View',
-	        'function'=>'render',
+	        'function'=>'send',
 	        'id'=>'simple.view',
-	        'layout'=> \Simple\Config\PHP::get('application', 'layout')
+	        'compileDir'=> \Simple\Config\PHP::get('application', 'templateCompileDir')
 	    )
 	),
 
 
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'save', 'id'=>'lellol.cache')),
 
-	\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view', 'route'=>'!404$')),
+	//\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view', 'route'=>'!404$')),
 
 
 	//mandatory
