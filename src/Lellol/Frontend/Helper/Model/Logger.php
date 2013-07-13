@@ -9,6 +9,9 @@ class Logger extends Simple\Singleton\Base {
 
 	private $_logger = null;
 
+	/**
+	 * Simple\Singleton\Base initializer
+	 */
 	private function _init() {
 		if(is_null($this->_logger))
 			$this->_logger = \Simple\Config\PHP::get('logger', 'handler');

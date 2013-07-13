@@ -25,6 +25,7 @@ return array(
         '_continue'=>true
     ),
 
+
     array(
     	'route'=>'404$',
     	'class'=>'home',

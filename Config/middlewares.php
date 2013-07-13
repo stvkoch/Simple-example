@@ -2,24 +2,16 @@
 
 return array(
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'bootstrap', 'function'=>'start', 'id'=>'lellol.bootstrap')),
-
 	\Simple\Middleware\Application::definition(array('class'=>'Request','function'=>'parse', 'configFilenameRoutes'=>'routes', 'id'=>'simple.request')),
-
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'open', 'id'=>'lellol.cache')),
-
 	//\Simple\Middleware\Application::definition(array('class'=>'View','function'=>'open', 'id'=>'simple.view')),
-
 	//yours middlewares pre controler
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'open', 'id'=>'lellol.flash')),
-
-
 	\Simple\Middleware\Application::definition(array('class'=>'Application', 'function'=>'dispatch', 'id'=>'simple.application')),
-
 	//yours middlewares pos controler
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'flash', 'function'=>'save', 'id'=>'lellol.flash')),
-
-
 	//\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'render', 'id'=>'simple.view')),
+
 	\Simple\Middleware\Application::definition(
 	    array(
 	        'namespace'=>'SmartyTemplate\Middleware',
@@ -30,14 +22,12 @@ return array(
 	    )
 	),
 
-
 	//\Simple\Middleware\Application::definition(array('namespace'=>'\Lellol\Middleware', class'=>'cache', 'function'=>'save', 'id'=>'lellol.cache')),
-
 	//\Simple\Middleware\Application::definition(array('class'=>'View', 'function'=>'send', 'id'=>'simple.view', 'route'=>'!404$')),
 
 
-	//mandatory
 
+	//mandatory
 	/*array(
 		'route'=>'.*',
 		'namespace' => '\Simple\Middleware',
@@ -49,8 +39,6 @@ return array(
 		'_continue'=>true,
 		'_persist' => true
 	),*/
-
-	
 	/*array(
 		'route'=>'.*',
 		'namespace' => '\Simple\Middleware',
@@ -64,9 +52,7 @@ return array(
 		'_continue'=>true,
 		'_persist' => true
 	),*/
-
 	//mandatory
-	
 	/*array(
 		'route'=>'.*',
 		'namespace' => '\Simple\Middleware',

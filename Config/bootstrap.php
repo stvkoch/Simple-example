@@ -1,8 +1,9 @@
 <?php
 return array(
 	function($backboneRaw){
+        
 	},
-	function(){
+	function($backboneRaw){
 		//Set composer.json
 			//"autoload": { "psr-0": {"Lellol": ""} }
 		// $loader = require '../vendor/autoload.php';
